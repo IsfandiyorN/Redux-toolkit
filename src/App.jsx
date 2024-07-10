@@ -10,6 +10,7 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { format } from "date-fns";
+import './App.css';
 import { addPost, deletePost, setSearch, setPostTitle, setPostBody, setSearchResults } from "./features/posts/postsSlice";
 
 function App() {
