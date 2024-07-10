@@ -1,10 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
 import postsReducer from '../features/posts/postsSlice';
-import searchReducer from '../features/search/searchSlice';
+import searchReducer from '../features/posts/search/searchSlice';
 
-export const store = configureStore({
+const store = configureStore({
   reducer: {
     posts: postsReducer,
     search: searchReducer,
   },
 });
+
+export default store;
